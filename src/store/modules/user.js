@@ -1,11 +1,10 @@
-// 登录成功以后，将用户信息通过store保存
+// 保存用户信息模块
 const state = {
   id: 0,
   username: ''
 }
-
 const getters = {
-  // isLogin()方法判断是否已经登录
+  // 判断用户是否已经登录
   isLogin (state) {
     return state.id !== 0
   }

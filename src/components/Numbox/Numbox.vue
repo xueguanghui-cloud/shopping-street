@@ -1,49 +1,65 @@
 <template>
-  <div class="mui-numbox" data-numbox-min="1" :data-numbox-max="max" :style="myStyle">
-    <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+  <div class="van-stepper van-sku__stepper">
+    <button type="button" class="van-stepper__minus" :disabled="showSubDisabled" @click="sub"></button>
     <input
-      class="mui-input-numbox"
-      type="number"
-      :value="initcount"
-      @change="countChanged"
+      type="tel"
+      role="spinbutton"
+      inputmode="numeric"
+      class="van-stepper__input"
+      v-model="count"
+      @change="setCount"
       ref="num"
     />
-    <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+    <button type="button" class="van-stepper__plus" :disabled="showAddDisabled" @click="add"></button>
   </div>
 </template>
 
 <script>
-import mui from '@/lib/mui/js/mui.min.js'
 export default {
   name: 'Numbox',
-  data() {
+  data () {
     return {
-      myStyle: {}
-    };
-  },
-  props: ['initcount', 'max', 'goodsid', 'size'],
-  mounted () {
-    mui('.mui-numbox').numbox()
-    if (this.$props.size === 'min') {
-      this.myStyle = { height: '25px', margin: '0 10px 0 10px' }
+      count: this.initcount,
+      showSubDisabled: false,
+      showAddDisabled: false
     }
   },
+  props: ['max', 'initcount', 'goodsid'],
   methods: {
-    countChanged () {
-      var count = parseInt(this.$refs.num.value)
-      this.$emit('count', { id: this.goodsid, count: count })
+    // 增加商品
+    add () {
+      if (this.count >= this.max) {
+        this.showAddDisabled = true
+      } else {
+        this.showSubDisabled = false
+        this.count++
+      }
     },
+    // 减少商品
+    sub () {
+      if (this.count <= 1) {
+        this.showSubDisabled = true
+      } else if (this.count >= 1) {
+        this.showAddDisabled = false
+        this.count--
+      }
+    },
+    setCount () {
+      var num = parseInt(this.$refs.num.value)
+      if (num === 0) {
+        this.count = 1
+      }
+    }
   },
   watch: {
-    'max' (newVal) {
-      mui('.mui-numbox').numbox().setOption('max', newVal)
+    // 当数据发生变化时，将最新商品的id和数量传递给父组件Goodsinfo
+    'count' (newVal) {
+      var params = { id: this.goodsid, count: newVal }
+      this.$emit('count', params)
     }
   }
 }
 </script>
 
-<style lang="less" scoped>
-div {
-  margin-left: 10px;
-}
+<style>
 </style>

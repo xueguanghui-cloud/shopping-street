@@ -1,17 +1,20 @@
-// 导入vue
 import Vue from 'vue'
-// 导入vuex
 import Vuex from 'vuex'
-import user from './modules/user.js'
-import shopcart from './modules/shopcart.js'
+// 导入shopcart.js
+import shopcart from './modules/shopcart'
+import user from './modules/user'
 
-// 将Vuex安装为vue项目的插件
 Vue.use(Vuex)
 
-// 将Vuex实例暴露出去
 export default new Vuex.Store({
+  state: {
+  },
+  mutations: {
+  },
+  actions: {
+  },
   modules: {
-    user,
-    shopcart
+    shopcart,
+    user
   }
 })

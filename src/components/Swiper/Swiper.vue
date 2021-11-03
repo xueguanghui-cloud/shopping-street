@@ -1,27 +1,26 @@
 <template>
-  <mt-swipe :auto="4000">
-    <mt-swipe-item v-for="item in imgList" :key="item.id">
-      <img :src="item.img" />
-    </mt-swipe-item>
-  </mt-swipe>
+  <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+    <van-swipe-item v-for="(image, index) in images" :key="index">
+      <img :src="image.img" alt />
+    </van-swipe-item>
+  </van-swipe>
 </template>
 
 <script>
 export default {
-  name: 'Swiper',
-  props: ['imgList']
+  props: ['images']
 }
 </script>
 
 <style scoped>
-.mint-swipe {
-  height: 200px;
+.my-swipe .van-swipe-item {
   color: #fff;
-}
-.mint-swipe-item {
+  height: 200px;
+  font-size: 20px;
+  line-height: 150px;
   text-align: center;
 }
-img {
+.my-swipe .van-swipe-item img {
   width: 100%;
   height: 100%;
 }
