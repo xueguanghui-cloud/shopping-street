@@ -1,136 +1,136 @@
-°²×°»·¾³£ºnode vue-cli
+å®‰è£…ç¯å¢ƒï¼šnode vue-cli
 
-## °²×°
+## å®‰è£…
 
-Ê¹ÓÃ npm °²×°£º
+ä½¿ç”¨ npm å®‰è£…ï¼š
 
 ```
 npm install
 ```
 
-Æô¶¯·şÎñ
+å¯åŠ¨æœåŠ¡
 
 ```
 npm run serve
 ```
 
-È»ºó¾Í¿ÉÒÔÔÚä¯ÀÀÆ÷ÖĞ·ÃÎÊ
+ç„¶åå°±å¯ä»¥åœ¨æµè§ˆå™¨ä¸­è®¿é—®
 
 ```
 - Local: http://localhost:8080
 - Network: http://192.168.112.220:8080
 ```
 
-## ÔÚÏßÊÖ²á
+## åœ¨çº¿æ‰‹å†Œ
 
-- [vue2.0 ¿ª·¢ÊÖ²á](https://cn.vuejs.org/)
-- [vant ¿ª·¢ÊÖ²á](https://vant-contrib.gitee.io/vant/#/zh-CN/home)
+- [vue2.0 å¼€å‘æ‰‹å†Œ](https://cn.vuejs.org/)
+- [vant å¼€å‘æ‰‹å†Œ](https://vant-contrib.gitee.io/vant/#/zh-CN/home)
 
-## Ä¿Â¼½á¹¹
+## ç›®å½•ç»“æ„
 
-³õÊ¼µÄÄ¿Â¼½á¹¹ÈçÏÂ£º
+åˆå§‹çš„ç›®å½•ç»“æ„å¦‚ä¸‹ï¼š
 
 ```
 shopping-demo:
-©À©¤public
-©¦      favicon.ico
-©¦      index.html
-©¦
-©À©¤src
-©¦   ©¦  App.vue
-©¦   ©¦  auth.js
-©¦   ©¦  main.js
-©¦   ©¦  theme.less
-©¦   ©¦
-©¦   ©À©¤Api
-©¦   ©¦      config.js
-©¦   ©¦      index.js
-©¦   ©¦
-©¦   ©À©¤assets
-©¦   ©¦  ©¦  logo.png
-©¦   ©¦  ©¦
-©¦   ©¦  ©¸©¤images
-©¦   ©¦          avatar_default.png
-©¦   ©¦          menu1.png
-©¦   ©¦          menu2.png
-©¦   ©¦          menu3.png
-©¦   ©¦          menu4.png
-©¦   ©¦          menu5.png
-©¦   ©¦          menu6.png
-©¦   ©¦          price-bck.png
-©¦   ©¦
-©¦   ©À©¤components
-©¦   ©¦  ©À©¤Header
-©¦   ©¦  ©¦      Header.vue
-©¦   ©¦  ©¦
-©¦   ©¦  ©À©¤Numbox
-©¦   ©¦  ©¦      Numbox.vue
-©¦   ©¦  ©¦
-©¦   ©¦  ©À©¤Swiper
-©¦   ©¦  ©¦      Swiper.vue
-©¦   ©¦  ©¦
-©¦   ©¦  ©¸©¤Tabbar
-©¦   ©¦          Tabbar.vue
-©¦   ©¦
-©¦   ©À©¤router
-©¦   ©¦      index.js
-©¦   ©¦
-©¦   ©À©¤store
-©¦   ©¦  ©¦  index.js
-©¦   ©¦  ©¦
-©¦   ©¦  ©¸©¤modules
-©¦   ©¦          head-portrait.js
-©¦   ©¦          shopcart.js
-©¦   ©¦          user.js
-©¦   ©¦
-©¦   ©¸©¤views
-©¦       ©À©¤Cart
-©¦       ©¦  ©¦  Cart.vue
-©¦       ©¦  ©¦
-©¦       ©¦  ©¸©¤Order
-©¦       ©¦          OrderCreate.vue
-©¦       ©¦          OrderList.vue
-©¦       ©¦          OrderShow.vue
-©¦       ©¦
-©¦       ©À©¤Home
-©¦       ©¦  ©¦  Home.vue
-©¦       ©¦  ©¦
-©¦       ©¦  ©À©¤News
-©¦       ©¦  ©¦      Newinfo.vue
-©¦       ©¦  ©¦      Newlist.vue
-©¦       ©¦  ©¦
-©¦       ©¦  ©¸©¤Photo
-©¦       ©¦          Photoinfo.vue
-©¦       ©¦          Photolist.vue
-©¦       ©¦
-©¦       ©À©¤Login
-©¦       ©¦      Login.vue
-©¦       ©¦
-©¦       ©À©¤Register
-©¦       ©¦      Register.vue
-©¦       ©¦
-©¦       ©À©¤Sort
-©¦       ©¦  ©¦  Sort.vue
-©¦       ©¦  ©¦
-©¦       ©¦  ©¸©¤Good
-©¦       ©¦          Goodlist.vue
-©¦       ©¦          Goodsinfo.vue
-©¦       ©¦
-©¦       ©¸©¤User
-©¦           ©¦  User.vue
-©¦           ©¦
-©¦           ©¸©¤Address
-©¦                   Address.vue
-©¦                   AddressAdd.vue
-©¦                   AddressEdit.vue
-©¦                   ©¦  .browserslistrc
-©À©¤  .editorconfig
-©À©¤  .eslintrc.js
-©À©¤  .gitignore
-©À©¤  babel.config.js
-©À©¤  gettree.bat
-©À©¤  package-lock.json
-©À©¤  package.json
-©À©¤  README.md
-©À©¤  vue.config.js
+â”œâ”€public
+â”‚      favicon.ico
+â”‚      index.html
+â”‚
+â”œâ”€src
+â”‚   â”‚  App.vue
+â”‚   â”‚  auth.js
+â”‚   â”‚  main.js
+â”‚   â”‚  theme.less
+â”‚   â”‚
+â”‚   â”œâ”€Api
+â”‚   â”‚      config.js
+â”‚   â”‚      index.js
+â”‚   â”‚
+â”‚   â”œâ”€assets
+â”‚   â”‚  â”‚  logo.png
+â”‚   â”‚  â”‚
+â”‚   â”‚  â””â”€images
+â”‚   â”‚          avatar_default.png
+â”‚   â”‚          menu1.png
+â”‚   â”‚          menu2.png
+â”‚   â”‚          menu3.png
+â”‚   â”‚          menu4.png
+â”‚   â”‚          menu5.png
+â”‚   â”‚          menu6.png
+â”‚   â”‚          price-bck.png
+â”‚   â”‚
+â”‚   â”œâ”€components
+â”‚   â”‚  â”œâ”€Header
+â”‚   â”‚  â”‚      Header.vue
+â”‚   â”‚  â”‚
+â”‚   â”‚  â”œâ”€Numbox
+â”‚   â”‚  â”‚      Numbox.vue
+â”‚   â”‚  â”‚
+â”‚   â”‚  â”œâ”€Swiper
+â”‚   â”‚  â”‚      Swiper.vue
+â”‚   â”‚  â”‚
+â”‚   â”‚  â””â”€Tabbar
+â”‚   â”‚          Tabbar.vue
+â”‚   â”‚
+â”‚   â”œâ”€router
+â”‚   â”‚      index.js
+â”‚   â”‚
+â”‚   â”œâ”€store
+â”‚   â”‚  â”‚  index.js
+â”‚   â”‚  â”‚
+â”‚   â”‚  â””â”€modules
+â”‚   â”‚          head-portrait.js
+â”‚   â”‚          shopcart.js
+â”‚   â”‚          user.js
+â”‚   â”‚
+â”‚   â””â”€views
+â”‚       â”œâ”€Cart
+â”‚       â”‚  â”‚  Cart.vue
+â”‚       â”‚  â”‚
+â”‚       â”‚  â””â”€Order
+â”‚       â”‚          OrderCreate.vue
+â”‚       â”‚          OrderList.vue
+â”‚       â”‚          OrderShow.vue
+â”‚       â”‚
+â”‚       â”œâ”€Home
+â”‚       â”‚  â”‚  Home.vue
+â”‚       â”‚  â”‚
+â”‚       â”‚  â”œâ”€News
+â”‚       â”‚  â”‚      Newinfo.vue
+â”‚       â”‚  â”‚      Newlist.vue
+â”‚       â”‚  â”‚
+â”‚       â”‚  â””â”€Photo
+â”‚       â”‚          Photoinfo.vue
+â”‚       â”‚          Photolist.vue
+â”‚       â”‚
+â”‚       â”œâ”€Login
+â”‚       â”‚      Login.vue
+â”‚       â”‚
+â”‚       â”œâ”€Register
+â”‚       â”‚      Register.vue
+â”‚       â”‚
+â”‚       â”œâ”€Sort
+â”‚       â”‚  â”‚  Sort.vue
+â”‚       â”‚  â”‚
+â”‚       â”‚  â””â”€Good
+â”‚       â”‚          Goodlist.vue
+â”‚       â”‚          Goodsinfo.vue
+â”‚       â”‚
+â”‚       â””â”€User
+â”‚           â”‚  User.vue
+â”‚           â”‚
+â”‚           â””â”€Address
+â”‚                   Address.vue
+â”‚                   AddressAdd.vue
+â”‚                   AddressEdit.vue
+â”‚                   â”‚  .browserslistrc
+â”œâ”€  .editorconfig
+â”œâ”€  .eslintrc.js
+â”œâ”€  .gitignore
+â”œâ”€  babel.config.js
+â”œâ”€  gettree.bat
+â”œâ”€  package-lock.json
+â”œâ”€  package.json
+â”œâ”€  README.md
+â”œâ”€  vue.config.js
 ```
